@@ -41,7 +41,8 @@ function MainNavigation() {
           </li>
           <li>
             <NavLink
-              to="/auth"
+              //  Loading the authentication page in login mode by default
+              to="/auth?mode=login"
               className={({ isActive }) =>
                 isActive ? classes.active : undefined
               }

@@ -1,14 +1,18 @@
-import { useState } from "react";
-import { Form } from "react-router-dom";
+//* Query Parameters
+// Query parameters are a defined set of parameters (key-value pair) attached to the end of a URL.
+// They're used to provide additional information to a web server when making requests.
+// They are an important part of the URL that define specific content or actions based on the data being passed.
+
+import { Form, Link, useSearchParams } from "react-router-dom";
 
 import classes from "./AuthForm.module.css";
 
 function AuthForm() {
-  const [isLogin, setIsLogin] = useState(true);
-
-  function switchAuthHandler() {
-    setIsLogin((isCurrentlyLogin) => !isCurrentlyLogin);
-  }
+  // useSearchParams is basically Query Parameters
+  const [searchParams] = useSearchParams();
+  // get() allows us to retrieve the value for a specific query parameter
+  //todo:  mode is the query parameter here
+  const isLogin = searchParams.get("mode") === "login";
 
   return (
     <Form method="post" className={classes.form}>
@@ -22,9 +26,10 @@ function AuthForm() {
         <input id="password" type="password" name="password" required />
       </p>
       <div className={classes.actions}>
-        <button onClick={switchAuthHandler} type="button">
+        {/* Using template literal to conditionally set URL */}
+        <Link to={`?mode=${isLogin ? "signup" : "login"}`}>
           {isLogin ? "Create new user" : "Login"}
-        </button>
+        </Link>
         <button>Save</button>
       </div>
     </Form>
