@@ -17,12 +17,20 @@ import AuthenticationPage, {
   action as authAction,
 } from "./pages/Authentication";
 import { action as logoutAction } from "./pages/Logout";
-
+import { tokenLoader } from "./util/auth";
 const router = createBrowserRouter([
   {
     path: "/",
     element: <RootLayout />,
     errorElement: <ErrorPage />,
+    // loader here looks at the localStorage and extracts the token
+    // token will then be available through the loader data via the root route ("/") in all the other routes
+    // React router will automatically re-evaluate that if we logout for example,
+    //and then re fetch the token and update the UI acccordingly if the token is not present
+    // getting the loader function from auth.js
+    loader: tokenLoader,
+    // assigning an id to te route
+    id: "root",
     children: [
       { index: true, element: <HomePage /> },
 
