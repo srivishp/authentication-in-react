@@ -48,7 +48,14 @@ export async function action({ request }) {
   const resData = await response.json();
   const token = resData.token;
 
+  // We have set timer to logout in Root.js, but if the user refreshes browser
+  // before 1 hour passes, the useEffect executes and timer is reset.
+  // But the token expires at the usual rate, so to prevent that we are doing...
+  // ...whatever this is :|
   localStorage.setItem("token", token);
+  const expiration = new Date();
+  expiration.setHours(expiration.getHours() + 1);
+  localStorage.setItem("expiration", expiration.toISOString());
 
   // Redirecting user to the starting page
   return redirect("/");
