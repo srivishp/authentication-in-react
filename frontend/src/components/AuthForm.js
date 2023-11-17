@@ -20,7 +20,7 @@ function AuthForm() {
   // useSearchParams is basically Query Parameters
   const [searchParams] = useSearchParams();
   // get() allows us to retrieve the value for a specific query parameter
-  //todo:  mode is the query parameter here
+  //#  "mode" is the query parameter here
   const isLogin = searchParams.get("mode") === "login";
   const isSubmitting = navigation.state === "submitting";
   return (
