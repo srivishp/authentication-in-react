@@ -1,12 +1,1 @@
-{
-  "events": [
-    {
-      "title": "A new event",
-      "image": "https://cdn.muenchen-p.de/fl_progressive,q_65/.imaging/stk/responsive/teaser300/dms/va-2016/muenchner-christkindlmarkt/christkindlmarkt-marienplat-logo-hp/document/christkindlmarkt-marienplat-logo-hp.jpg",
-      "date": "2022-10-01",
-      "description": "Some awesome event!",
-      "id": "2a42fcc4-ea21-4bdd-abf6-c40006dc66a9"
-    }
-  ],
-  "users": []
-}
+{"events":[{"title":"Sample Event","image":"https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Sydney_Australia._%2821339175489%29.jpg/375px-Sydney_Australia._%2821339175489%29.jpg","date":"2023-11-26","description":"LOL","id":"13ff9f72-0f2d-4412-b17d-68f1e4eb9827"}],"users":[{"email":"sdsfd@ffdsf.com","password":"$2a$12$mMufJ80tQlyXF.E650iige6F6N1gVoRUlcZYsds0g/aug3LsIntcK","id":"f18937f0-4969-40bf-9718-0cc45c40854b"},{"email":"trtte@wfeew.com","password":"$2a$12$WAWXuMrVMUi6YUCdO32qMOv5zr4u1CBPjsDkCaHPUXFxnxitc0Drm","id":"768bc2b6-f350-43ae-a234-4d0ada3e48f6"},{"email":"stoobid@gmail.com","password":"$2a$12$60wVGXIXD.3ljb.wDqe5G.TORvnp0oJRn//25qqNUL2l/TwV2e.uG","id":"bbb4cd5f-c35b-44c2-b32a-a702755f8114"},{"email":"sddddd@asas.com","password":"$2a$12$gwOOaVwhi1JZs5l27Y4fVek04R2KoSe3RL1Eapp5y9rGX4DFGIAPW","id":"e370111c-ddeb-4e2c-91c2-374bf7884d82"},{"email":"hello@example.com","password":"$2a$12$6D0gqGb5Fv9udoUUdr/q.OuvP1cSRYa1k5z7wL2DqC21aAxeOC4v2","id":"e8976cef-84f4-4bf9-8c92-d8dae31ca95b"},{"email":"4444@WDW.com","password":"$2a$12$1EQkSO.U0q5pXEo9Ejz6UefAWLgLkEisPlDDLq5NifNIl7klhGjEq","id":"45fecf9c-670d-402e-afa1-f75fbc82149a"},{"email":"hello2@example.com","password":"$2a$12$tW1NFGiN7IVjUrvB3LVdp.6ject6mfBYPkD9qD7Mg673RluU8xBMe","id":"426943a4-1b92-4c50-b1f5-1a84ca7e3557"}]}
